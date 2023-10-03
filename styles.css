@@ -9,104 +9,111 @@
   text-align: center;
   margin-top: 50px;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
+:root {
+  --LightRed: hsl(0, 100%, 67%);
+  --OrangeyYellow: hsl(39, 100%, 56%);
+  --GreenTeal: hsl(166, 100%, 37%);
+  --CobaltBlue: hsl(234, 85%, 45%);
+  --LightSlateBlue: hsl(252, 100%, 67%);
+  --LightRoyalBlue: hsl(241, 81%, 54%);
+  --VioletBlue: hsla(256, 72%, 46%, 1);
+  --PersianBlue: hsla(241, 72%, 46%, 0);
+  --White: hsl(0, 0%, 100%);
+  --PaleBlue: hsl(221, 100%, 96%);
+  --LightLavender: hsl(241, 100%, 89%);
+  --DarkGrayBlue: hsl(224, 30%, 27%);
+  --BoxShadow: hsl(221, 100%, 96%);
 }
+.attribution {
+  color: hsl(228, 45%, 44%);
+  /* display: none; */
+}
+
+/* Background color of each score component */
 #Reaction {
   background-color: hsl(0, 100%, 67%, 0.1);
-}
-#Reaction .images p {
-  color: hsl(0, 100%, 67%);
-}
-#Memory {
-  background-color: hsl(39, 100%, 56%, 0.1);
-}
-#Memory .images p {
-  color: hsl(39, 100%, 56%);
 }
 #Verbal {
   background-color: hsl(166, 100%, 37%, 0.1);
 }
-#Verbal .images p {
-  color: hsl(166, 100%, 37%);
+#Memory {
+  background-color: hsl(39, 100%, 56%, 0.1);
 }
 #Visual {
   background-color: hsl(234, 85%, 45%, 0.1);
 }
+#Memory .images p {
+  color: var(--OrangeyYellow);
+}
+#Reaction .images p {
+  color: var(--LightRed);
+}
+#Verbal .images p {
+  color: var(--GreenTeal);
+}
 #Visual .images p {
-  color: hsl(234, 85%, 45%);
+  color: var(--CobaltBlue);
 }
 span {
-  color: hsl(224, 30%, 27%);
-}
-main {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  color: var(--DarkGrayBlue);
 }
 #component-card {
   display: flex;
-  box-shadow: 15px 20px 25px hsl(221, 100%, 96%);
-  border-radius: 25px;
+  flex-direction: column;
 }
 #Total-score {
-  text-align: center;
-  width: 50%;
-  padding: 40px;
+  width: 100%;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-  border-radius: 25px;
+  background-image: linear-gradient(
+    var(--LightSlateBlue),
+    var(--LightRoyalBlue)
+  );
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 #Total-score h3 {
-  color: hsl(0, 0%, 100%);
-}
-#Total-score h1 {
-  color: hsl(0, 0%, 100%);
-  font-weight: 700;
-  font-size: 45px;
+  color: var(--White);
 }
 #Total-score h3 {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-weight: 600;
   font-size: 20px;
 }
+#Total-score h1 {
+  color: var(--White);
+  font-weight: 700;
+  font-size: 45px;
+}
 #Total-score p {
-  color: hsl(241, 100%, 89%);
-  font-size: 14px;
+  color: var(--LightLavender);
+  font-size: 15px;
 }
 #circle {
-  width: 130px;
-  height: 130px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  background-image: linear-gradient(
-    hsla(256, 72%, 46%, 1),
-    hsla(241, 72%, 46%, 0)
-  );
+  background-image: linear-gradient(var(--VioletBlue), var(--PersianBlue));
 }
 #write-up {
-  width: 200px;
+  width: 250px;
+  text-align: center;
 }
 #score-list {
-  padding-top: 30px;
-  width: 50%;
-  /* background-color: aqua; */
-}
-#score-list {
-  padding: 20px;
+  padding: 10px 20px 0px 20px;
+  width: 100%;
 }
 #score-list h3 {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 15px;
 }
@@ -115,9 +122,8 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: antiquewhite;
   margin-bottom: 12px;
-  padding: 7px;
+  padding: 15px;
   border-radius: 10px;
   font-size: 14px;
   font-weight: 700;
@@ -131,17 +137,74 @@ main {
   margin-left: 5px;
 }
 #score-list button {
-  margin-top: 18px;
-  background-color: hsl(224, 30%, 27%);
-  color: hsl(0, 0%, 100%);
-  padding: 10px;
+  margin-top: 10px;
+  background-color: var(--DarkGrayBlue);
+  color: var(--White);
+  padding: 20px;
   width: 100%;
   border: none;
   border-radius: 40px;
   font-size: 14px;
-  transition: 0.7s;
+  transition: 0.5s;
 }
 #score-list button:hover {
-  background-color: hsl(241, 81%, 54%);
-  cursor: pointer;
+  background-color: var(--LightRoyalBlue);
+}
+
+@media screen and (min-width: 600px) {
+  .attribution {
+    color: hsl(228, 45%, 44%);
+    display: block;
+  }
+  main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #component-card {
+    flex-direction: row;
+    box-shadow: 15px 20px 25px var(--BoxShadow);
+    border-radius: 25px;
+  }
+  #Total-score {
+    text-align: center;
+    width: 50%;
+    padding: 40px;
+    border-radius: 25px;
+  }
+  #Total-score h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  #Total-score p {
+    font-size: 14px;
+  }
+  #circle {
+    width: 130px;
+    height: 130px;
+    margin-top: 20px;
+  }
+  #write-up {
+    width: 200px;
+  }
+  #score-list {
+    padding-top: 30px 20px 0px 20px;
+    width: 50%;
+  }
+  #score-list h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .score {
+    padding: 7px;
+  }
+  #score-list button {
+    margin-top: 18px;
+    padding: 10px;
+  }
+  #score-list button:hover {
+    cursor: pointer;
+  }
 }
