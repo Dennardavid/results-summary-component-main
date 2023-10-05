@@ -127,7 +127,7 @@ span {
   margin-left: 5px;
 }
 .score-list button {
-  margin-top: 10px;
+  margin-top: 15px;
   background-color: var(--DarkGrayBlue);
   color: var(--White);
   padding: 20px;
