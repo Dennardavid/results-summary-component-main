@@ -24,11 +24,10 @@ Users should be able to:
 
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
-- **Bonus**: Use the local JSON data to dynamically populate the content
 
 ### Screenshot
 
-![](/design/screenshot.png)
+![Screenshot](https://res.cloudinary.com/dsngkhlct/image/upload/v1696518288/Screenshot_2023-10-05_154449_qsji3d.png)
 
 ### Links
 
