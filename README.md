@@ -27,7 +27,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](https://res.cloudinary.com/dsngkhlct/image/upload/v1696518288/Screenshot_2023-10-05_154449_qsji3d.png)
+[Screenshot](https://res.cloudinary.com/dsngkhlct/image/upload/v1696518288/Screenshot_2023-10-05_154449_qsji3d.png)
+
 
 ### Links
 
@@ -45,4 +46,3 @@ Users should be able to:
 
 - Frontend Mentor - [@Dennardavid](https://www.frontendmentor.io/profile/Dennardavid)
 - Twitter - [@dennar_david](https://twitter.com/dennar_david)
-
